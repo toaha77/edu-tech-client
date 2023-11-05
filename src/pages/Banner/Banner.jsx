@@ -1,7 +1,8 @@
   
  const Banner = () => {
     return (
-        <div className="sm:object-cover hero  min-h-screen" style={{backgroundImage: 'url(https://i.ibb.co/VxDpwSK/joanna-kosinska-7-ACu-Hoez-UYk-unsplash.jpg)'}}>
+      <div className="mt-6 mb-4">
+          <div className="sm:object-cover hero  min-h-screen" style={{backgroundImage: 'url(https://i.ibb.co/VxDpwSK/joanna-kosinska-7-ACu-Hoez-UYk-unsplash.jpg)'}}>
   <div className="hero-overlay bg-opacity-60 "></div>
   <div className="  text-neutral-content">
     <div className="">
@@ -11,6 +12,7 @@
     </div>
   </div>
 </div>
+      </div>
     );
  };
  
