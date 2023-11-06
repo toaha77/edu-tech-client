@@ -1,9 +1,9 @@
+
  
-const AssignMentCard = ({assignment}) => {
-    const handleDelete = id =>{
-     const proceed = 
-    }
-     const {name, marks, photo, data, description} = assignment
+const AssignMentCard = ({assignment, handleDelete}) => {
+    const {_id,name, marks, photo, data, description} = assignment
+   
+    
     return (
         <div>
            
@@ -14,7 +14,7 @@ const AssignMentCard = ({assignment}) => {
     <h2 className="text-[18px] ">Marks: {marks}</h2>
     {/* <p>{description}</p> */}
     <div className="card-actions justify-end">
-      <button  className="btn btn-primary">Delete</button>
+      <button onClick={()=> handleDelete(_id)}  className="btn btn-primary">Delete</button>
     </div>
   </div>
 </div>
