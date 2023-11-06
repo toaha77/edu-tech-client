@@ -30,7 +30,7 @@ const handleGoogle =()=>{
   navigate('/')
  })
 
- .catch(error => toast.error(error.message))
+ .catch(err => toast.error(err.message))
 }
     
  return (

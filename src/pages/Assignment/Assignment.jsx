@@ -14,7 +14,7 @@ const Assignment = () => {
     }, [])
 
     const handleDelete = id =>{
-        console.log(id);
+       
       Swal.fire({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",
@@ -52,6 +52,9 @@ const Assignment = () => {
             <h2 className="text-5xl font-semibold text-center mb-4"><span className="text-red-500">Your Assignment</span> is here</h2>
            </div> 
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"> 
+         <div>
+          
+         </div>
          {
             assignments.map(assignment => <AssignMentCard key={assignment._id} 
             assignment={assignment}

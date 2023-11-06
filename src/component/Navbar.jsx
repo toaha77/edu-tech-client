@@ -52,7 +52,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="/assignment "
+          to="/allAssignment "
           className={({ isActive, isPending }) =>
             isPending
               ? "pending"
@@ -61,9 +61,23 @@ const Navbar = () => {
               : "  "
           }
         >
-        Assignment
+       All Assignment
         </NavLink>
       </li>
+      {/* <li>
+        <NavLink
+          to="/myAssignment "
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? " bg-red-500 rounded-md font-semibold   border"
+              : "  "
+          }
+        >
+       My Assignment
+        </NavLink>
+      </li> */}
       <li>
         <NavLink
           to="/create-assignment "
