@@ -81,7 +81,7 @@ const CreateAssignment = () => {
             </label>
             <label htmlFor="pet-select" >Choose a level:</label>
 
-<select name="pets">
+<select className="input input-bordered" name="pets">
   <option value="">--Please choose an option--</option>
   <option value="Hard">Hard</option>
   <option value="Medium">Medium</option>
