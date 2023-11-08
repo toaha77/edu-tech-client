@@ -1,8 +1,13 @@
-# React + Vite
+## Assignment Study-Group 
+ - On the user's home page, banners, features, FAQ services can be seen
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ - User can view all data on All Assignments page
 
-Currently, two official plugins are available:
+ - Users can update the assignment by logging in if they want
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ - User can create assignment by login
+
+ - User can delete assignment  
+
+ # Live link : https://edu-tech-bf3f1.web.app/
+
