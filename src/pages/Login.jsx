@@ -19,19 +19,10 @@ const Login = () => {
     signIn(email, password)
       .then(() => {
        
+        toast.success("Login Successfully");
+        navigate("/");
 
-        const user = { email };
-        axios.post('https://study-group-server.vercel.app/jwt', user, {
-            withCredentials: true,
-          })
-          .then((res) => {
-            console.log(res.data);
-            if (res.data.success) {
-              navigate("/");
-              toast.success("Login Successfully");
-
-            }
-          });
+           
       })
       .catch((error) => toast.error(error.message));
   };
