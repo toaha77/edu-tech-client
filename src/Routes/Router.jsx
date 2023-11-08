@@ -21,18 +21,18 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: ()=> fetch('http://localhost:5000/feature')
+                loader: ()=> fetch('https://study-group-server.vercel.app/feature')
 
             },
             {
              path: '/allAssignment',
              element: <Assignment></Assignment>,
-             loader: ()=> fetch('http://localhost:5000/assignmentCount') 
+             loader: ()=> fetch('https://study-group-server.vercel.app/assignmentCount') 
             },
             {
              path: 'allAssignment/view/:id',
              element: <PrivateRoute><ViewAssignment></ViewAssignment></PrivateRoute>,
-             loader: ({params})=> fetch(`http://localhost:5000/create-assignment/${params.id}`),
+             loader: ({params})=> fetch(`https://study-group-server.vercel.app/create-assignment/${params.id}`),
             
             },
             {
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
             {
              path: '/allAssignment/updateAssignment/:id',
              element:  <UpdateAssignment></UpdateAssignment>,
-             loader: ({params})=> fetch(`http://localhost:5000/create-assignment/${params.id}`)
+             loader: ({params})=> fetch(`https://study-group-server.vercel.app/create-assignment/${params.id}`)
             },
             {
              path: '/create-assignment',

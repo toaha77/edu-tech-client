@@ -15,7 +15,7 @@ const Assignment = () => {
   
  ;
   useEffect(() => {
-    fetch(`http://localhost:5000/create-assignment?page=${currentPage}&size=${itemsPerPage}`)
+    fetch(`https://study-group-server.vercel.app/create-assignment?page=${currentPage}&size=${itemsPerPage}`)
       .then((res) => res.json())
       .then((data) => setAssignments(data));
   }, [currentPage, itemsPerPage]);

@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 const MyAssignment = () => {
     const  {user} = useContext(AuthContext)
    const [myAssignment, setMyAssignment] = useState([])
-    const url = `http://localhost:5000/create-assignment?email=${user?.email}`
+    const url = `https://study-group-server.vercel.app/create-assignment?email=${user?.email}`
 
     useEffect(()=>{
       fetch(url)
@@ -26,7 +26,7 @@ const MyAssignment = () => {
         confirmButtonText: "Yes, delete it!",
       }).then((result) => {
         if (result.isConfirmed) {
-          fetch(`http://localhost:5000/create-assignment/${id}`, {
+          fetch(`https://study-group-server.vercel.app/create-assignment/${id}`, {
             method: "DELETE",
           })
             .then((res) => res.json())
@@ -49,7 +49,7 @@ const MyAssignment = () => {
     };
 
     const handleSubmit = id =>{
-      fetch(`http://localhost:5000/create-assignment/${id}`, {
+      fetch(`https://study-group-server.vercel.app/create-assignment/${id}`, {
         method: 'PUT',
         headers: {
           'content-type': 'application/json'
