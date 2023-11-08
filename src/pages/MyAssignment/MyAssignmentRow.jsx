@@ -1,8 +1,11 @@
+import toast from "react-hot-toast";
 import { MdDelete } from "react-icons/md";
  const MyAssignmentRow = ({ assignment, handleDelete }) => {
   const { _id,name, photo, date, email, status } = assignment;
 
- 
+ const handleSubmit = () =>{
+  toast.success('Submitted Successfully!')
+ }
   return (
     <div className="bg-gray-200">
       <div className="container mx-auto flex items-center justify-between">
@@ -31,7 +34,7 @@ import { MdDelete } from "react-icons/md";
           <th>
              
               
-              <button className="btn btn-ghost btn-xs">submit</button>
+              <button onClick={handleSubmit} className="btn btn-ghost btn-xs">submit</button>
             
           </th>
         </tr>
