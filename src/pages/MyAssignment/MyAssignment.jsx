@@ -48,30 +48,10 @@ const MyAssignment = () => {
       });
     };
 
-    const handleSubmit = id =>{
-      fetch(`https://study-group-server.vercel.app/create-assignment/${id}`, {
-        method: 'PUT',
-        headers: {
-          'content-type': 'application/json'
-        },
-        body: JSON.stringify({status: 'submit'})
-      })
+   
+ 
 
-      .then(res => res.json())
-      .then(data => {
-        console.log(data)
-
-        if (data.modifiedCount  > 0) {
-           const remaining = myAssignment.filter(assignment => assignment.id !==id) 
-           const updated= myAssignment.find(assignment => assignment.id === id)
-           updated.status = 'submit'
-           const newAssignment = [updated  , ...remaining]
-           setMyAssignment(newAssignment)
-
-        }
-      })
-      
-    }
+   
     return (
         <div className="overflow-x-auto mt-8 w-full">
   <table className="table w-full">
@@ -85,7 +65,7 @@ const MyAssignment = () => {
         myAssignment.map( assignment=> <MyAssignmentRow key={assignment._id}
         assignment={assignment}
         handleDelete={handleDelete}
-        handleSubmit={handleSubmit}
+        
         ></MyAssignmentRow>)
       }
       </div>

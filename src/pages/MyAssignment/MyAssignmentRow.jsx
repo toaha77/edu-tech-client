@@ -1,5 +1,5 @@
 import { MdDelete } from "react-icons/md";
- const MyAssignmentRow = ({ assignment, handleDelete, handleSubmit }) => {
+ const MyAssignmentRow = ({ assignment, handleDelete }) => {
   const { _id,name, photo, date, email, status } = assignment;
 
  
@@ -29,10 +29,10 @@ import { MdDelete } from "react-icons/md";
           <td>{date}</td>
           <td>{email}</td>
           <th>
-            {
-              status == 'submit' ? <span className="text-red-500 font-semibold">Submitted</span> : 
-              <button  onClick={()=>handleSubmit(_id)} className="btn btn-ghost btn-xs">submit</button>
-            }
+             
+              
+              <button className="btn btn-ghost btn-xs">submit</button>
+            
           </th>
         </tr>
       </div>
