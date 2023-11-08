@@ -7,8 +7,7 @@ import Home from "../pages/Home";
 import ErrorPage from "../pages/ErrorPage";
 import CreateAssignment from "../pages/CreateAssignment/CreateAssignment";
 import PrivateRoute from "./PrivateRoute";
-// import AllAssignment from "../pages/AllAssignment/AllAssignment";
-import UpdateAssignment from "../pages/AllAssignment/UpdateAssignment";
+ import UpdateAssignment from "../pages/AllAssignment/UpdateAssignment";
 import ViewAssignment from "../pages/Assignment/ViewAssignment";
 import MyAssignment from "../pages/MyAssignment/MyAssignment";
 
