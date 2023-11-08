@@ -4,8 +4,7 @@ import { useContext } from "react";
 import { FcGoogle } from "react-icons/fc";
 import toast from "react-hot-toast";
 import { AuthContext } from "../Provider/AuthProvider";
-import axios from "axios";
-
+ 
 const Login = () => {
   const navigate = useNavigate();
 
