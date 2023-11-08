@@ -17,38 +17,7 @@ const Assignment = () => {
       .then((data) => setAssignments(data));
   }, []);
 
-  // const handleDelete = (id) => {
-  //   Swal.fire({
-  //     title: "Are you sure?",
-  //     text: "You won't be able to revert this!",
-  //     icon: "warning",
-  //     showCancelButton: true,
-  //     confirmButtonColor: "#3085d6",
-  //     cancelButtonColor: "#d33",
-  //     confirmButtonText: "Yes, delete it!",
-  //   }).then((result) => {
-  //     if (result.isConfirmed) {
-  //       fetch(`http://localhost:5000/create-assignment/${id}`, {
-  //         method: "DELETE",
-  //       })
-  //         .then((res) => res.json())
-  //         .then((data) => {
-  //           console.log(data);
-  //           if (data.deletedCount > 0) {
-  //             Swal.fire(
-  //               "Deleted!",
-  //               "Your assignment has been deleted.",
-  //               "success"
-  //             );
-  //             const remaining = assignments.filter(
-  //               (assignment) => assignment._id !== id
-  //             );
-  //             setAssignments(remaining);
-  //           }
-  //         });
-  //     }
-  //   });
-  // };
+   
 
   const handleLevel = e =>{
     
@@ -63,7 +32,7 @@ const Assignment = () => {
       <div className="mb-4">
         <label htmlFor="pet-select">Choose a level:</label>
 
-        <select className="input input-bordered" onChange={handleLevel} name="pets">
+        <select value={itemsPerPage} className="input input-bordered" onChange={handleLevel} name="pets">
           <option value="">--Please choose an option--</option>
           <option value="Hard">Hard</option>
           <option value="Medium">Medium</option>
