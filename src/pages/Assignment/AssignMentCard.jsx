@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
  
 const AssignMentCard = ({assignment }) => {
-    const {_id,name, marks, photo, date, description} = assignment
+    const {_id,name, marks, photo} = assignment
    
     
     return (
